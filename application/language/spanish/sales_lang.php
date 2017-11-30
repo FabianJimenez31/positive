@@ -19,13 +19,13 @@ $lang['sales_edit']='Editar';
 $lang['sales_edit_item']='Editar artículo';
 $lang['sales_find_or_scan_item']='Buscar o escanear artículo';
 $lang['sales_find_or_scan_item_or_receipt']='Buscar o escanear artículo o entrada';
-$lang['sales_select_customer']='Seleccionar cliente (opcional)';
+$lang['sales_select_customer']='Seleccionar cliente';
 
 $lang['sales_start_typing_customer_name']='Empiece escribiendo el nombre del cliente...';
 
 $lang['sales_tax']='Impuesto';
 
-$lang['sales_unable_to_add_item']='Imposible agregar el artículo a la venta';
+$lang['sales_unable_to_add_item']='Estas tratando de vender un articulo sin existencias!';
 $lang['sales_sale_for_customer']='Cliente:';
 $lang['sales_remove_customer']='Eliminar cliente';
 $lang['sales_error_editing_item']='Error al editar el artículo';
@@ -36,7 +36,7 @@ $lang['sales_receipt']='RECIBO SIMPLIFICADO';
 
 $lang['sales_sale']='Venta';
 $lang['sales_return']='Devolución';
-$lang['sales_confirm_finish_sale'] = '¿Está seguro que desea procesar esta venta? Esta acción no puede deshacerse.';
+$lang['sales_confirm_finish_sale'] = '¿Está seguro que desea cancelar la venta?';
 $lang['sales_confirm_cancel_sale'] = '¿Está seguro que desea limpiar esta venta? Todos los artículos se eliminarán.';
 
 
@@ -60,23 +60,23 @@ $lang['sales_edit_sale'] = 'Editar venta';
 $lang['sales_successfully_deleted'] = 'La venta se ha eliminado de manera exitosa';
 $lang['sales_unsuccessfully_deleted'] = 'La venta no se ha eliminado de manera exitosa';
 $lang['sales_delete_entire_sale'] = 'Eliminar la venta de manera completa';
-$lang['sales_delete_confirmation'] = '¿Está seguro que desea eliminar esta venta? Esta acción no se puede deshacer.';
+$lang['sales_delete_confirmation'] = '¿Está seguro que desea eliminar esta venta?';
 
 $lang['sales_delete_successful'] = 'Ha eliminado una venta de manera exitosa';
 $lang['sales_delete_unsuccessful'] = 'La venta no se ha eliminado de manera exitosa';
-$lang['sales_suspend_sale'] = 'Suspender';
-$lang['sales_confirm_suspend_sale'] = '¿Está seguro que desea suspender esta venta?';
-$lang['sales_suspended_sales'] = 'Ventas suspendidas';
-$lang['sales_suspended_sale_id'] = 'Id. de venta suspendida';
+$lang['sales_suspend_sale'] = 'Registrar portabilidad';
+$lang['sales_confirm_suspend_sale'] = 'Se esta guardado una portabilidad';
+$lang['sales_suspended_sales'] = 'Portabilidad';
+$lang['sales_suspended_sale_id'] = 'Número de portabilidad';
 
 $lang['sales_customer'] = 'Cliente';
 
-$lang['sales_unsuspend_and_delete'] = 'Reactivar y eliminar';
+$lang['sales_unsuspend_and_delete'] = 'Retomar portabilidad';
 
-$lang['sales_successfully_suspended_sale'] = 'Se ha suspendido la venta de manera exitosa';
+$lang['sales_successfully_suspended_sale'] = 'Se guardo su portabilidad de manera exitosa';
 
 
-$lang['sales_undelete_entire_sale'] = 'Recuperar venta';
+$lang['sales_undelete_entire_sale'] = 'Retomar portabilidad';
 $lang['sales_undelete_confirmation'] = '¿Está seguro que desea recuperar esta venta, esta acción no puede deshacerse';
 $lang['sales_undelete_successful'] = 'Ha recuperado la venta de manera exitosa';
 $lang['sales_undelete_unsuccessful'] = 'La venta no se ha recuperado de manera exitosa';
