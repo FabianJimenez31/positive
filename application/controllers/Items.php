@@ -921,6 +921,7 @@ class Items extends Secure_area implements Idata_controller
 		'replenish_level'=>$this->input->post('replenish_level')!='' ? $this->input->post('replenish_level') : NULL,
 		'is_service'=>$this->input->post('is_service') ? $this->input->post('is_service') : 0 ,
 		'is_osticket'=>$this->input->post('is_osticket') ? $this->input->post('is_osticket') : 0 ,
+		'special_force_serial'=>$this->input->post('special_force_serial') ? $this->input->post('special_force_serial') : 0 ,
 		'osticket_fields'=>osticketCleanValues($this->input->post('osticket_fields')) ,
 		'allow_alt_description'=>$this->input->post('allow_alt_description') ? $this->input->post('allow_alt_description') : 0 ,
 		'is_serialized'=>$this->input->post('is_serialized') ? $this->input->post('is_serialized') : 0,

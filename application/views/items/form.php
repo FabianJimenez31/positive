@@ -333,6 +333,20 @@
 					</div>
 				</div>
 				
+				<div id="special_force_serial_div" class="form-group <?php if (!$item_info->is_serialized){echo 'hidden';} ?>">
+					<?php echo form_label(lang("items_add_serial_number")." ".lang('common_required').':', 'special_force_serial',array('class'=>'col-sm-3 col-md-3 col-lg-2 control-label wide')); ?>
+					<div class="col-sm-9 col-md-9 col-lg-10">
+						<?php echo form_checkbox(array(
+							'name'=>'special_force_serial',
+							'id'=>'special_force_serial',
+								'class'=>'delete-checkbox',
+							'value'=>1,
+							'checked'=>($item_info->special_force_serial)? 1 : 0)
+						);?>
+						<label for="special_force_serial"><span></span></label>
+					</div>
+				</div>
+				
 				<div id="serial_container" class="form-group serial-input <?php if (!$item_info->is_serialized){echo 'hidden';} ?>">
 					<label class="col-sm-3 col-md-3 col-lg-2 control-label"><?php echo lang('items_serial_numbers') ?></label>
 					<div class="col-sm-9 col-md-3 col-lg-3">
@@ -1962,10 +1976,12 @@ $(document).ready(function()
 		if ($(this).prop('checked'))
 		{
 			$("#serial_container").removeClass('hidden');
+			$("#special_force_serial_div").removeClass('hidden');
 		}
 		else
 		{
 			$("#serial_container").addClass('hidden');			
+			$("#special_force_serial_div").addClass('hidden');
 		}
 	});
 	

@@ -1423,7 +1423,14 @@ class Sales extends Secure_area
 		$sale_emp_info=$this->Employee->get_info($sold_by_employee_id);
 		$empleado_info=($sold_by_employee_id && $sold_by_employee_id != $employee_id) ? $sale_emp_info : $emp_info ;
 
+		$special_serial_force_error="";
 		foreach($data['cart'] as $linea=>$producto){
+		
+			if($producto['is_serialized']==1 && $producto["special_force_serial"]==1 && (!isset($producto['serialnumber']) || ( isset($producto['serialnumber']) && strlen($producto['serialnumber'])<1 ) ) ){
+			
+				$special_serial_force_error=lang("items_add_serial_number")." ".lang('common_required');
+			
+			}
 
 
 			if($producto['is_service']==1 && $producto['is_osticket']==1){
@@ -1643,6 +1650,12 @@ class Sales extends Secure_area
 		if ($ost_ERROR!='')
 		{
 			$this->_reload(array('error' => $ost_ERROR), false);
+			return;
+		}
+		
+		if ($special_serial_force_error!='')
+		{
+			$this->_reload(array('error' => $special_serial_force_error), false);
 			return;
 		}
 
