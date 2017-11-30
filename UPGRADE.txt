@@ -1,0 +1,6 @@
+Actualizar
+-------------------------
+
+Reemplazar todos los archivos por los nuevos y repetir el proceso de instalación SIN crear la base de datos, pues ya existe.
+
+
