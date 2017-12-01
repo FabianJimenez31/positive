@@ -36,7 +36,7 @@ $lang['sales_receipt']='RECIBO SIMPLIFICADO';
 
 $lang['sales_sale']='Venta';
 $lang['sales_return']='Devolución';
-$lang['sales_confirm_finish_sale'] = '¿Está seguro que desea cancelar la venta?';
+$lang['sales_confirm_finish_sale'] = '¿Esta seguro de realizar esta venta?';
 $lang['sales_confirm_cancel_sale'] = '¿Está seguro que desea limpiar esta venta? Todos los artículos se eliminarán.';
 
 
